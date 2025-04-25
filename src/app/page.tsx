@@ -3,93 +3,62 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className={styles.page}>
+      <header className={styles.header}>
+        <h1>marko.xyz</h1>
+      </header>
+      <nav className={styles.nav}>
+        <ul>
+          <li>
+            <a href="">home</a>
+          </li>
+          <li>
+            <a href="">about</a>
+          </li>
+        </ul>
+      </nav>
+      <main className={styles.main}>
+        {" "}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        tenetur nulla nam reiciendis, amet assumenda doloremque fugit
+        dignissimos animi aliquam neque labore voluptate, odio, rerum
+        repudiandae. Doloremque numquam, delectus voluptatem facere veniam
+        quaerat, temporibus possimus minima et nemo doloribus ut velit maxime
+        sed quos provident officia quod minus facilis ad neque, hic sint.
+        Explicabo sit, quod ad modi unde dolor quibusdam vitae nostrum accusamus
+        aliquam aliquid architecto numquam hic earum voluptatibus asperiores
+        nobis rerum magnam fugit enim reprehenderit similique. Explicabo non
+        enim, expedita magnam inventore alias sunt possimus facilis cum nulla
+        doloribus dolores a temporibus quas ratione quidem impedit distinctio
+        velit laudantium excepturi. Ut, rem in sunt dicta iusto ullam quam velit
+        animi nobis illo, accusamus exercitationem ab iste obcaecati dolorem
+        sequi dolorum deleniti, deserunt autem nulla. Nam quae molestiae,
+        doloremque quis esse mollitia assumenda omnis, voluptate quo velit
+        officia, eveniet soluta eligendi corrupti nulla a architecto itaque
+        ipsum. Nesciunt, hic? Eius suscipit nostrum inventore exercitationem
+        recusandae veritatis, unde amet dicta fugit vero eligendi maiores
+        voluptatem dignissimos totam nemo quisquam assumenda sed deserunt minus
+        vitae voluptatum distinctio? Ratione debitis sapiente cumque minus modi
+        praesentium, veritatis repudiandae vero quam eos eaque qui adipisci a
+        velit. Fuga earum unde commodi praesentium excepturi!
+      </main>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
+      <footer className={styles.footer}>
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
+          href="https://bsky.app/profile/marko.xyz"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <Image
+            aria-hidden
+            src="/bsky.svg"
+            alt="Bluesky icon"
+            width={16}
+            height={16}
+          />
+          @marko.xyz
         </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </footer>
+    </div>
   );
 }
